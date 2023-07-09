@@ -15,7 +15,7 @@ Domain Path: /languages
 //Load translation
 
 function wordcount_load_plugin_textdomain(){
-    load_plugin_textdomain('word-count-plugin-text-domain', FALSE, basename(__FILE__)) . '/languages/';
+    load_plugin_textdomain('word-count', FALSE, basename(__FILE__)) . '/languages/';
 }
 add_action('plugins_loaded', 'wordcount_load_plugin_textdomain');
 
